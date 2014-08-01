@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="multiplication_multiplier">
+        <item>Units</item>
+        <item>Tens</item>
+        <item>Hundreds</item>
+    </string-array>
+
+    <string-array name="multiplication_multiplicand">
+        <item>Units</item>
+        <item>Tens</item>
+        <item>Hundreds</item>
+        <item>Thousands</item>
+        <item>Millions</item>
+    </string-array>
+
+    <string-array name="division_dividend">
+        <item>Units</item>
+        <item>Tens</item>
+        <item>Hundreds</item>
+        <item>Thousands</item>
+        <item>Millions</item>
+    </string-array>
+
+    <string-array name="division_factor">
+        <item>Units</item>
+        <item>Tens</item>
+        <item>Hundreds</item>
+    </string-array>
+
+</resources>

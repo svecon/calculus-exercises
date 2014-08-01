@@ -1,0 +1,170 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ResultsFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Your results"
+        android:id="@+id/results_textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Problems solved:"
+        android:id="@+id/problems_solved_label"
+        android:layout_below="@id/results_textView"
+        android:layout_alignLeft="@id/results_textView"
+        android:layout_alignStart="@id/results_textView"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/results_problems_solved_successfully"
+        android:layout_toEndOf="@id/problems_with_errors_label"
+        android:layout_marginLeft="24dp"
+        android:layout_alignTop="@id/problems_solved_label" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Problems with errors:"
+        android:id="@+id/problems_with_errors_label"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/problems_solved_label"
+        android:layout_alignLeft="@id/problems_solved_label"
+        android:layout_alignStart="@id/problems_solved_label" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/results_problems_with_errors"
+        android:layout_alignTop="@id/problems_with_errors_label"
+        android:layout_alignLeft="@id/results_problems_solved_successfully"
+        android:layout_alignStart="@id/results_problems_solved_successfully" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Number of errors:"
+        android:id="@+id/number_of_errors_label"
+        android:layout_below="@id/problems_with_errors_label"
+        android:layout_alignLeft="@id/problems_with_errors_label"
+        android:layout_alignStart="@id/problems_with_errors_label"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/results_number_of_errors"
+        android:layout_toEndOf="@id/number_of_errors_label"
+        android:layout_alignTop="@id/number_of_errors_label"
+        android:layout_alignLeft="@id/results_problems_with_errors"
+        android:layout_alignStart="@id/results_problems_with_errors" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Success rate:"
+        android:id="@+id/success_rate_label"
+        android:layout_below="@id/number_of_errors_label"
+        android:layout_alignLeft="@id/number_of_errors_label"
+        android:layout_alignStart="@id/number_of_errors_label"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/results_success_rate"
+        android:layout_toEndOf="@id/success_rate_label"
+        android:layout_alignTop="@id/success_rate_label"
+        android:layout_alignLeft="@id/results_number_of_errors"
+        android:layout_alignStart="@id/results_number_of_errors" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Time per problem:"
+        android:id="@+id/time_per_problem_label"
+        android:layout_below="@id/success_rate_label"
+        android:layout_alignLeft="@id/success_rate_label"
+        android:layout_alignStart="@id/success_rate_label"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/results_time_per_problem"
+        android:layout_toEndOf="@id/time_per_problem_label"
+        android:layout_alignTop="@id/time_per_problem_label"
+        android:layout_alignLeft="@id/results_success_rate"
+        android:layout_alignStart="@id/results_success_rate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Time overall:"
+        android:id="@+id/time_overall_label"
+        android:layout_below="@id/time_per_problem_label"
+        android:layout_alignLeft="@id/time_per_problem_label"
+        android:layout_alignStart="@id/time_per_problem_label"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/results_time_overall"
+        android:layout_toEndOf="@id/time_overall_label"
+        android:layout_alignTop="@id/time_overall_label"
+        android:layout_alignLeft="@id/results_time_per_problem"
+        android:layout_alignStart="@id/results_time_per_problem" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start new game"
+        android:id="@+id/new_game"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/time_overall_label"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@id/time_overall_label"
+        android:layout_alignStart="@id/time_overall_label"
+        android:onClick="onNewGameButtonClicked"
+        android:layout_marginRight="24dp" />
+
+</RelativeLayout>
+</ScrollView>

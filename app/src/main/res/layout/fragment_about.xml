@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cz.svecon.calculus.fragments.AboutFragment"
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ondřej Švec "
+        android:id="@+id/textView"
+        android:singleLine="true"
+        android:textIsSelectable="true"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="http://svecon.cz/"
+        android:textIsSelectable="true"
+        android:singleLine="true"
+        android:id="@+id/problems_solved_label"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:autoLink="web"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="© 2014"
+        android:textIsSelectable="true"
+        android:singleLine="true"
+        android:id="@+id/problems_solved"
+        android:layout_above="@+id/problems_solved_label"
+        android:layout_toRightOf="@+id/textView"
+        android:paddingBottom="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Version:"
+        android:textIsSelectable="true"
+        android:singleLine="true"
+        android:id="@+id/problems_with_errors_label"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/problems_solved_label"
+        android:layout_alignLeft="@+id/problems_solved_label"
+        android:layout_alignStart="@+id/problems_solved_label" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/version"
+        android:textIsSelectable="true"
+        android:id="@+id/problems_with_errors"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_alignTop="@+id/problems_with_errors_label"
+        android:layout_toRightOf="@+id/problems_with_errors_label"
+        android:textStyle="bold" />
+
+</RelativeLayout>

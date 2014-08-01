@@ -1,0 +1,146 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/settings_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        tools:context="cz.svecon.calculus.SettingsActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/settings_category_basic"
+            android:id="@+id/problems_solved"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/problems_count_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/settings_problems_count" />
+
+        <SeekBar
+            android:id="@+id/problems_count"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="30" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvLabel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/tvLabel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="15" />
+
+            <TextView
+                android:id="@+id/tvLabel3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:text="30" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/settings_category_multiplication"
+            android:id="@+id/problems_solved_label"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/multiplication_multiplier_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/multiplication_multiplier_label" />
+
+
+        <Spinner
+            android:id="@+id/multiplication_multiplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/multiplication_multiplier" />
+
+
+        <TextView
+            android:id="@+id/multiplication_multiplicand_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/multiplication_multiplicand_label" />
+
+        <Spinner
+            android:id="@+id/multiplication_multiplicand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/multiplication_multiplicand" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/settings_category_division"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/division_factor_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/division_factor_label" />
+
+        <Spinner
+            android:id="@+id/division_factor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/division_factor"
+            />
+
+        <TextView
+            android:id="@+id/division_dividend_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/division_dividend_label" />
+
+        <Spinner
+            android:id="@+id/division_dividend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/division_dividend" />
+
+
+    </LinearLayout>
+</ScrollView>
